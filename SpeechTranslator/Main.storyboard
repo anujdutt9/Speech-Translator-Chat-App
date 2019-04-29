@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speech" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJY-83-MIx">
+                                <rect key="frame" x="20" y="465" width="180" height="56"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ulO-cs-Gas"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Start Streaming">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jT-bC-3nM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-jh-Nuq">
+                                <rect key="frame" x="224" y="465" width="170" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="rNH-rq-fbw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Stop Streaming">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWm-My-dhj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vtY-SX-V3c">
+                                <rect key="frame" x="20" y="101" width="374" height="154"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuQ-iA-199">
+                                <rect key="frame" x="0.0" y="582" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9UF-31-95p"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CUd-b4-9Yb"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English (United States)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa4-sG-JEj">
+                                <rect key="frame" x="79" y="546" width="256" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPh-CZ-6Wk">
+                                <rect key="frame" x="20" y="67" width="59" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recieved:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exV-S8-UKb">
+                                <rect key="frame" x="24" y="270" width="112" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="526-8c-xeX">
+                                <rect key="frame" x="20" y="305" width="374" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="XDi-ex-g4s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5T-9o-NLy">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qQE-gw-RRg"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="action" id="ae7-lT-WxS">
+                                        <connections>
+                                            <action selector="connectionButton:" destination="BYZ-38-t0r" id="4fR-yM-HkM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aJY-83-MIx" firstAttribute="top" secondItem="wgH-jh-Nuq" secondAttribute="top" id="3dQ-3B-RgO"/>
+                            <constraint firstAttribute="trailing" secondItem="JuQ-iA-199" secondAttribute="trailing" id="3f8-ge-lc4"/>
+                            <constraint firstItem="aJY-83-MIx" firstAttribute="top" secondItem="526-8c-xeX" secondAttribute="bottom" constant="8" symbolic="YES" id="3gf-Mt-s7k"/>
+                            <constraint firstItem="aJY-83-MIx" firstAttribute="baseline" secondItem="wgH-jh-Nuq" secondAttribute="firstBaseline" id="64O-bO-48z"/>
+                            <constraint firstItem="exV-S8-UKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="8IJ-OX-eO2"/>
+                            <constraint firstItem="JuQ-iA-199" firstAttribute="trailing" secondItem="M5T-9o-NLy" secondAttribute="trailing" id="9hJ-tQ-byX"/>
+                            <constraint firstItem="aPh-CZ-6Wk" firstAttribute="leading" secondItem="vtY-SX-V3c" secondAttribute="leading" id="Aed-Ys-P1i"/>
+                            <constraint firstItem="JuQ-iA-199" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DBN-rd-XgR"/>
+                            <constraint firstItem="vtY-SX-V3c" firstAttribute="leading" secondItem="526-8c-xeX" secondAttribute="leading" id="FZ4-Nw-x9d"/>
+                            <constraint firstItem="526-8c-xeX" firstAttribute="centerX" secondItem="Pa4-sG-JEj" secondAttribute="centerX" id="R8J-O2-2IO"/>
+                            <constraint firstItem="M5T-9o-NLy" firstAttribute="top" secondItem="JuQ-iA-199" secondAttribute="bottom" constant="20" id="UCo-zy-OVk"/>
+                            <constraint firstItem="JuQ-iA-199" firstAttribute="top" secondItem="Pa4-sG-JEj" secondAttribute="bottom" constant="7" id="XYL-om-A4v"/>
+                            <constraint firstItem="526-8c-xeX" firstAttribute="leading" secondItem="aJY-83-MIx" secondAttribute="leading" id="YTs-eL-rQ8"/>
+                            <constraint firstItem="Pa4-sG-JEj" firstAttribute="centerX" secondItem="JuQ-iA-199" secondAttribute="centerX" id="a0K-6I-WDj"/>
+                            <constraint firstItem="aPh-CZ-6Wk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bHA-8o-NKa"/>
+                            <constraint firstItem="526-8c-xeX" firstAttribute="trailing" secondItem="wgH-jh-Nuq" secondAttribute="trailing" id="dIp-dM-Mh2"/>
+                            <constraint firstItem="aPh-CZ-6Wk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="dOq-qx-19y"/>
+                            <constraint firstItem="exV-S8-UKb" firstAttribute="top" secondItem="vtY-SX-V3c" secondAttribute="bottom" constant="15" id="hRr-ev-d9a"/>
+                            <constraint firstItem="Pa4-sG-JEj" firstAttribute="top" secondItem="aJY-83-MIx" secondAttribute="bottom" constant="25" id="ixQ-B2-WXm"/>
+                            <constraint firstItem="vtY-SX-V3c" firstAttribute="top" secondItem="aPh-CZ-6Wk" secondAttribute="bottom" constant="5" id="jmy-nY-wqf"/>
+                            <constraint firstItem="M5T-9o-NLy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nr7-20-KDy"/>
+                            <constraint firstItem="wgH-jh-Nuq" firstAttribute="leading" secondItem="aJY-83-MIx" secondAttribute="trailing" constant="24" id="rc4-vE-cMN"/>
+                            <constraint firstItem="JuQ-iA-199" firstAttribute="leading" secondItem="M5T-9o-NLy" secondAttribute="leading" id="xFQ-i5-WmP"/>
+                            <constraint firstItem="526-8c-xeX" firstAttribute="top" secondItem="exV-S8-UKb" secondAttribute="bottom" constant="6" id="zGv-ya-AY6"/>
+                            <constraint firstItem="vtY-SX-V3c" firstAttribute="trailing" secondItem="526-8c-xeX" secondAttribute="trailing" id="zxK-ji-aD4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recievedMessage" destination="526-8c-xeX" id="apb-es-Beb"/>
+                        <outlet property="selectedLanguage" destination="Pa4-sG-JEj" id="Lhc-Di-vlX"/>
+                        <outlet property="startStream" destination="aJY-83-MIx" id="lcu-Ou-edL"/>
+                        <outlet property="stopStream" destination="wgH-jh-Nuq" id="hph-4p-9bN"/>
+                        <outlet property="textView" destination="vtY-SX-V3c" id="aym-NZ-3gu"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="I19-bM-Qp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="273.88392857142856"/>
+        </scene>
+    </scenes>
+</document>
