@@ -2,7 +2,7 @@
 
 ***The "Speech Translator Chat App" is an iOS app that aims at solving the language barrier problem. Using this app two people who speak different languages can communicate with each other seamlessly.***
 
-<img src="app.PNG" alt="" width="50%" height="50%">
+<img src="Host.gif" alt="" width="50%" height="50%"><img src="Reciever.gif" alt="" width="50%" height="50%">
 
 # Usage
 
