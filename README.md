@@ -54,3 +54,4 @@ https://cloud.google.com/translate/docs/translating-text#translate_translate_tex
 - [ ] Add Audio input from Bluetooth Headphones support.
 - [ ] Add Text to Speech in Local Language support.
 - [ ] Improve UI.
+- [ ] Add more languages support.
