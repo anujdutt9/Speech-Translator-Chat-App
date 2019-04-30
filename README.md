@@ -14,23 +14,27 @@
 
 **3.** [Google Cloud Translate](https://cloud.google.com/translate/docs/reference/rest/) API
 
-# Usage
+# App Usage/ Installation
 
 **1.** From a terminal, run: ./INSTALL-COCOAPODS
 
-**2.** Run and Install the app on an iPhone.
+**2.** Get your Google Cloud Speech to Text API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/SpeechRecognitionService.swift#L19)
 
-**3.** Either Host a Translation session or Join an existing session (at a time, 7 people can join a chat session).
+**3.** Get your Google Cloud Translation API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/GoogleTranslate.swift#L32)
 
-**4.** Every user can select their preferred language in which they speak in the app.
+**4.** Run and Install the app on an iPhone.
 
-**5.** Click on Start Streaming button and speak in your preferred language.
+**5.** Either Host a Translation session or Join an existing session (at a time, 7 people can join a chat session).
 
-**6.** The app takes in the speech and converts into the preferred language.
+**6.** Every user can select their preferred language in which they speak in the app.
 
-**7.** All other users in the session recieve this message and see it in their preferred language using translation service.
+**7.** Click on Start Streaming button and speak in your preferred language.
 
-**8.** This communication is a two way communocation. Hence, anyone in the session can send and recieve the text.
+**8.** The app takes in the speech and converts into the preferred language.
+
+**9.** All other users in the session recieve this message and see it in their preferred language using translation service.
+
+**10.** This communication is a two way communocation. Hence, anyone in the session can send and recieve the text.
 
 
 # References
