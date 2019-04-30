@@ -6,6 +6,14 @@
 
 <img src="Host.gif" alt="" width="50%" height="30%"><img src="Reciever.gif" alt="" width="50%" height="30%">
 
+# Tools Used
+
+**1.** iOS [Multipeer Connectivity Framework](https://developer.apple.com/documentation/multipeerconnectivity) for sharing data between devices.
+
+**2.** [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text/) API
+
+**3.** [Google Cloud Translate](https://cloud.google.com/translate/docs/reference/rest/) API
+
 # Usage
 
 **1.** From a terminal, run: ./INSTALL-COCOAPODS
