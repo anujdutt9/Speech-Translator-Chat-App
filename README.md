@@ -48,3 +48,9 @@ https://github.com/GoogleCloudPlatform/ios-docs-samples/tree/master/speech/Swift
 ```
 https://cloud.google.com/translate/docs/translating-text#translate_translate_text-cli-curl
 ```
+
+# To Do
+
+- [ ] Add Audio input from Bluetooth Headphones support.
+- [ ] Add Text to Speech in Local Language support.
+- [ ] Improve UI.
