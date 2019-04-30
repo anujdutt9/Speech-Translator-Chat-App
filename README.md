@@ -18,9 +18,9 @@
 
 **1.** From a terminal, run: ./INSTALL-COCOAPODS
 
-**2.** Get your Google Cloud Speech to Text API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/SpeechRecognitionService.swift#L19)
+**2.** Get your Google Cloud Speech to Text API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/SpeechRecognitionService.swift#L19).
 
-**3.** Get your Google Cloud Translation API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/GoogleTranslate.swift#L32)
+**3.** Get your Google Cloud Translation API Key and put it [here](https://github.com/anujdutt9/Speech-Translator-Chat-App/blob/17a13e6499082e204d0dd8bc2e5261029563110a/SpeechTranslator/GoogleTranslate.swift#L32).
 
 **4.** Run and Install the app on an iPhone.
 
