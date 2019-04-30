@@ -6,19 +6,21 @@
 
 # Usage
 
-**1.** Install the app on an iPhone.
+**1.** From a terminal, run: ./INSTALL-COCOAPODS
 
-**2.** Either Host a Translation session or Join an existing session (at a time, 7 people can join a chat session).
+**2.** Run and Install the app on an iPhone.
 
-**3.** Every user can select their preferred language in which they speak in the app.
+**3.** Either Host a Translation session or Join an existing session (at a time, 7 people can join a chat session).
 
-**4.** Click on Start Streaming button and speak in your preferred language.
+**4.** Every user can select their preferred language in which they speak in the app.
 
-**5.** The app takes in the speech and converts into the preferred language.
+**5.** Click on Start Streaming button and speak in your preferred language.
 
-**6.** All other users in the session recieve this message and see it in their preferred language using translation service.
+**6.** The app takes in the speech and converts into the preferred language.
 
-**7.** This communication is a two way communocation. Hence, anyone in the session can send and recieve the text.
+**7.** All other users in the session recieve this message and see it in their preferred language using translation service.
+
+**8.** This communication is a two way communocation. Hence, anyone in the session can send and recieve the text.
 
 
 # References
